@@ -11,7 +11,7 @@ for(j=1; j<=x; j++){
     // initializez variabila sum = 0; 
     let sum = 0;
     // tai arr cuprins intre indicile i si i+j+1 calculand suma  fiecarui event e ca fiind suma + e 
-    arr.slice((i, i+j+1)).forEach((e)=> {
+    arr.slice(i, i+j+1).forEach((e)=> {
       sum = sum + e;});
       // afisez rezultatul 
       console.log(sum); 
