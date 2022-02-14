@@ -5,7 +5,7 @@ const n = arr.length;
 // declar constanta x ca fiind lungimea arrayului - 4 ( avand in vedere ca ultima suma este formata din ultimile 4 numere asa stabilesc indexul initierii ultimului event e )
 const x = arr.length - 4;
 // pentru j = index 1 si atata timp cat j <= (n-4) itinerarea continua cu j+1 
-for(j=1; j<=x; j++){
+for(j=1; j < x; j++){
   // pentru i = 0; atata timp cat i+j < n itinerarea continua i + 1 
   for(i=0; (i+j)<n; i++){
     // initializez variabila sum = 0; 
@@ -15,5 +15,3 @@ for(j=1; j<=x; j++){
       sum = sum + e;});
       // afisez rezultatul 
       console.log(sum); 
-  }
-}
